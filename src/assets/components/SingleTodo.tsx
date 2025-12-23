@@ -10,7 +10,7 @@ interface Props{
 
 
 
-export const SingleTodo: React.FC<todo: Todo ; todos?: Todo[] ; setTodos?: any> = ({todo ,todos: _todos , setTodos: _setTodos}: Props) => {
+export const SingleTodo: React.FC<Props> = ({todo }) => {
   return (
    <form >
     <div>{todo.todo} <span><FaEdit/></span> <span><RiDeleteBin5Fill/></span></div>

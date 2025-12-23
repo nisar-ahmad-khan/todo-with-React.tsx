@@ -9,8 +9,8 @@ interface Props {
 export const InputField: React.FC<Props> = ({todo , setTodo , handleSubmit}) => {
     const inputRef = useRef<HTMLInputElement>(null);
   return (
-    <form onSubmit={(e)=>{
-        handleSubmit(e);
+    <form onSubmit={()=>{
+        handleSubmit();
         inputRef.current?.blur()
     }}>
          <h1>Add Task</h1>
