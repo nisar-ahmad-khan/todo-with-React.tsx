@@ -114,7 +114,7 @@ const App: React.FC = () => {
         >
           <h1 className="text-3xl font-bold text-center mb-6 flex items-center justify-center gap-2">
             <FiCheckCircle className="text-sky-400" />
-            Todo App
+            Taskify
           </h1>
 
                <form onSubmit={handleSubmit} className="flex gap-2">
